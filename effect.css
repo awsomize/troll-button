@@ -1,0 +1,48 @@
+body{
+    margin:0;
+    height:100vh;
+    overflow:hidden;
+    background:#0f0f0f;
+    font-family:Arial;
+    color:white;
+}
+
+#trollBtn{
+    position:absolute;
+    padding:20px 40px;
+    font-size:22px;
+    border:none;
+    border-radius:12px;
+    background:rgba(244, 92, 255, 0.803);
+    color:white;
+    cursor:pointer;
+    box-shadow:0 0 20px #ff8eff;
+    transition:0.05s;
+}
+
+#counter{
+    position:fixed;
+    top:10px;
+    left:10px;
+    font-size:20px;
+}
+
+#msg{
+    position:fixed;
+    bottom:20px;
+    width:100%;
+    text-align:center;
+    font-size:22px;
+}
+
+.float{
+    position:absolute;
+    font-size:18px;
+    animation:fly 1.2s forwards;
+    pointer-events:none;
+}
+
+@keyframes fly{
+    from{opacity:1; transform:translateY(0);}
+    to{opacity:0; transform:translateY(-120px);}
+}
